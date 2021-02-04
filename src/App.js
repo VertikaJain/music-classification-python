@@ -1,7 +1,9 @@
+import BasicExample from "./1-useState/basicExample"
+
 function App() {
   return (
     <div className="container">
-      <h2>Advanced React</h2>
+      <BasicExample />
     </div>
   );
 }
