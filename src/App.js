@@ -1,9 +1,11 @@
-import BasicExample from "./1-useState/basicExample"
+// import BasicExample from "./1-useState/basicExample"
+import ArrayExample from "./1-useState/arrayExample"
 
 function App() {
   return (
     <div className="container">
-      <BasicExample />
+      {/* <BasicExample /> */}
+      <ArrayExample />
     </div>
   );
 }
