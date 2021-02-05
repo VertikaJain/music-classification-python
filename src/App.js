@@ -6,7 +6,8 @@
 // import CleanupExample from "./2-useEffect/cleanupExample"
 // import FetchDataExample from "./2-useEffect/fetchDataExample"
 // import MultipleReturn from "./3-conditional-rendering/multipleReturn"
-import ShortCircuit from "./3-conditional-rendering/shortCircuit"
+// import ShortCircuit from "./3-conditional-rendering/shortCircuit"
+import ShowHide from "./3-conditional-rendering/showHide"
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <CleanupExample /> */}
       {/* <FetchDataExample /> */}
       {/* <MultipleReturn /> */}
-      <ShortCircuit />
+      {/* <ShortCircuit /> */}
+      <ShowHide />
     </div>
   );
 }
