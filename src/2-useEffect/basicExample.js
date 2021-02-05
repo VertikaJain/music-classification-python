@@ -6,9 +6,15 @@ const BasicExample = () => {
     // You cannot place hooks in the conditional statements.
 
     useEffect(() => {
+        console.log("in use effect...");
         if (counter > 0)
             document.title = `New Message(${counter})`
-    })
+    }, [counter]) // dependency on "counter" i.e. if counter changes then it(useEffect) will run.
+
+    // You can have multiple useEffects
+    useEffect(() => {
+        console.log("hello world!");
+    }, []) // empty array means that it(useEffect) will run only on the initial render.
 
     return (
         <>
