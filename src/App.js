@@ -4,7 +4,8 @@
 // import CounterExample from "./1-useState/counterExample"
 // import BasicExample from "./2-useEffect/basicExample"
 // import CleanupExample from "./2-useEffect/cleanupExample"
-import FetchDataExample from "./2-useEffect/fetchDataExample"
+// import FetchDataExample from "./2-useEffect/fetchDataExample"
+import MultipleReturn from "./3-conditional-rendering/multipleReturn"
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <ObjectExample /> */}
       {/* <CounterExample /> */}
       {/* <CleanupExample /> */}
-      <FetchDataExample />
+      {/* <FetchDataExample /> */}
+      <MultipleReturn />
     </div>
   );
 }
