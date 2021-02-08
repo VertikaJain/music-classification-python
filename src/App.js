@@ -7,7 +7,8 @@
 // import FetchDataExample from "./2-useEffect/fetchDataExample"
 // import MultipleReturn from "./3-conditional-rendering/multipleReturn"
 // import ShortCircuit from "./3-conditional-rendering/shortCircuit"
-import ShowHide from "./3-conditional-rendering/showHide"
+// import ShowHide from "./3-conditional-rendering/showHide"
+import ControlledInputs from './4-forms/controlledInputs'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <FetchDataExample /> */}
       {/* <MultipleReturn /> */}
       {/* <ShortCircuit /> */}
-      <ShowHide />
+      {/* <ShowHide /> */}
+      <ControlledInputs />
     </div>
   );
 }
