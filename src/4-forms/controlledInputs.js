@@ -4,10 +4,16 @@ const ControlledInputs = () => {
 
     const [firstName, setFirstName] = useState('')
     const [email, setEmail] = useState('')
+    const [employees, setEmployee] = useState([])
 
     const handleSubmit = (e) => {
         e.preventDefault() // to prevent the page to reload by default on submit event.
-        console.log(firstName,email);
+        if (!firstName || !email) {
+            console.log("incorrect entry..");
+        } else {
+            let newPeople = [...employees, { id: new Date().getTime(), firstName, email }]
+            setEmployee(newPeople)
+        }
     }
 
     return (
@@ -22,10 +28,18 @@ const ControlledInputs = () => {
                     </div>
                     <div className="form-control">
                         <label htmlFor="email">Email: </label>
-                        <input type="text" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                        <input type="text" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     </div>
                     <button type="submit">Add Employee</button>
                 </form>
+                <h3>Employee updated List</h3>
+                {employees.map(employee => {
+                    let { id, firstName, email } = employee
+                    return <div key={id} className="item">
+                        <h4>{firstName}</h4>
+                        <h4>{email}</h4>
+                    </div>
+                })}
             </article>
         </>
     )
