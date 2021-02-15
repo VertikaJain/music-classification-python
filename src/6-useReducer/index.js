@@ -1,18 +1,6 @@
 import React, { useState, useReducer } from 'react'
 import Modal from "./modal"
-
-const reducer = (state, action) => { // always return state otherwise it will result into an error -> undefined state
-    if (action.type === "ADD_ITEM") {
-        return { ...state, animals: [...state.animals, action.payload], isModalOpen: true, modalContent: "Item added." }
-    }
-    if (action.type === "NO_VALUE") {
-        return { ...state, isModalOpen: true, modalContent: "Please add Item." }
-    }
-    if (action.type === "CLOSE_MODAL") {
-        return { ...state, isModalOpen: false, modalContent: "" }
-    }
-    throw new Error("Invalid Action.")
-}
+import Reducer from "./reducer"
 
 const defaultState = {
     animals: [],
@@ -22,7 +10,7 @@ const defaultState = {
 
 const Index = () => {
     const [name, setName] = useState("")
-    const [state, dispatch] = useReducer(reducer, defaultState)
+    const [state, dispatch] = useReducer(Reducer, defaultState)
 
     let handleSubmit = (e) => {
         e.preventDefault()
@@ -50,8 +38,9 @@ const Index = () => {
                 <button type="submit" >Submit</button>
             </form>
             {state.animals.map(animal => {
-                return <div key={animal.id}>
+                return <div key={animal.id} className="item">
                     {animal.name}
+                    <button onClick={() => dispatch({ type: "REMOVE_ITEM", payload: animal.id })}>Remove</button>
                 </div>
             })}
         </>
