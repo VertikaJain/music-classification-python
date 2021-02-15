@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Modal = () => {
+const Modal = ({modalContent}) => { // destructuring props.
     return (
-        <div>
-            modaaal
+        <div className="modal">
+            <p>{modalContent}</p>
         </div>
     )
 }
