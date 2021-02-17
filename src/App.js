@@ -13,7 +13,8 @@
 // import UseRefBasics from "./5-useRef/useRefBasic"
 // import UseReducer from "./6-useReducer"
 // import PropsDrilling from "./7-propsDrill/props-drilling"
-import UseContextExample from "./8-context-api/useContextExample"
+// import UseContextExample from "./8-context-api/useContextExample"
+import FetchExample from "./9-custom-hooks/fetchExample"
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       {/* <UseRefBasics /> */}
       {/* <UseReducer /> */}
       {/* <PropsDrilling/> */}
-      <UseContextExample />
+      {/* <UseContextExample /> */}
+      <FetchExample/>
     </div>
   );
 }
