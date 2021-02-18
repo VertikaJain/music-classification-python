@@ -5,10 +5,11 @@ const url = "https://course-api.com/javascript-store-products"
 
 const FetchExample = () => {
     const { loading, products } = useFetch(url)
-    console.log(products);
     return (
         <div>
-            <h2>{loading ? "loading..." : "data"}</h2>
+            <h2>{loading ? "loading..." : products.map(product => {
+                return <p key={product.id}>{product.fields.company}</p>
+            })}</h2>
         </div>
     )
 }
