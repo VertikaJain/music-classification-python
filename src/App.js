@@ -15,7 +15,8 @@
 // import PropsDrilling from "./7-propsDrill/props-drilling"
 // import UseContextExample from "./8-context-api/useContextExample"
 // import FetchExample from "./9-custom-hooks/fetchExample"
-import PropTypes from "./10-prop-types"
+// import PropTypes from "./10-prop-types"
+import ReactRouter from "./11-react-router"
 
 function App() {
   return (
@@ -36,7 +37,8 @@ function App() {
       {/* <PropsDrilling/> */}
       {/* <UseContextExample /> */}
       {/* <FetchExample/> */}
-      <PropTypes/>
+      {/* <PropTypes/> */}
+      <ReactRouter/>
     </div>
   );
 }
