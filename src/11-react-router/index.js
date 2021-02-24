@@ -11,15 +11,20 @@ import NavBar from "./Navbar"
 
 const Index = () => {
     return <Router>
-        <Route exact path="/">
-            <Home />
-        </Route>
-        <Route path="/about">
-            <About />
-        </Route>
-        <Route path="/people">
-            <People />
-        </Route>
+        <Switch>
+            <Route exact path="/">
+                <Home />
+            </Route>
+            <Route path="/about">
+                <About />
+            </Route>
+            <Route path="/people">
+                <People />
+            </Route>
+            <Route path="*">
+                <Error />
+            </Route>
+        </Switch>
     </Router>
 }
 
@@ -27,3 +32,4 @@ export default Index
 
 
 // The exact property helps to avoid rendering of all components. Only the ones specified in the URL will be displayed. 
+// Switch renders a route exclusively.
