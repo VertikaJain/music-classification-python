@@ -8,9 +8,11 @@ import Person from "./Person"
 import Error from "./Error"
 import People from "./People"
 import NavBar from "./Navbar"
+import Navbar from "./Navbar"
 
 const Index = () => {
     return <Router>
+        <Navbar/>
         <Switch>
             <Route exact path="/">
                 <Home />
