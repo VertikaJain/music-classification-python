@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 const people = [
     { id: 1, name: 'john' },
@@ -13,7 +14,8 @@ const People = () => {
             {people.map(person => {
                 return (
                     <div key={person.id} className="item">
-                        {person.name}
+                        <h4>{person.name}</h4>
+                        <Link to={`/person/${person.id}`}>About</Link> {/* Placeholder - URL should be same as mentioned in Route. */}
                     </div>
                 )
             })}

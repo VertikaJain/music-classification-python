@@ -12,7 +12,7 @@ import Navbar from "./Navbar"
 
 const Index = () => {
     return <Router>
-        <Navbar/>
+        <Navbar />
         <Switch>
             <Route exact path="/">
                 <Home />
@@ -23,6 +23,7 @@ const Index = () => {
             <Route path="/people">
                 <People />
             </Route>
+            <Route path="/person/:id" children={<Person />}></Route> {/* URL parameter here is id (can be named anything) */}
             <Route path="*">
                 <Error />
             </Route>
