@@ -16,7 +16,8 @@
 // import UseContextExample from "./8-context-api/useContextExample"
 // import FetchExample from "./9-custom-hooks/fetchExample"
 // import PropTypes from "./10-prop-types"
-import ReactRouter from "./11-react-router"
+// import ReactRouter from "./11-react-router"
+import UseMemo from "./12-use-memo"
 
 function App() {
   return (
@@ -38,7 +39,8 @@ function App() {
       {/* <UseContextExample /> */}
       {/* <FetchExample/> */}
       {/* <PropTypes/> */}
-      <ReactRouter/>
+      {/* <ReactRouter/> */}
+      <UseMemo/>
     </div>
   );
 }
