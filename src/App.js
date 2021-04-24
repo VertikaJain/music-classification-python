@@ -17,7 +17,8 @@
 // import FetchExample from "./9-custom-hooks/fetchExample"
 // import PropTypes from "./10-prop-types"
 // import ReactRouter from "./11-react-router"
-import UseMemo from "./12-use-memo"
+// import UseMemo from "./12-use-memo"
+import Birthdays from "./projects/1-birthdays"
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
       {/* <FetchExample/> */}
       {/* <PropTypes/> */}
       {/* <ReactRouter/> */}
-      <UseMemo/>
+      {/* <UseMemo/> */}
+      <Birthdays/>
     </div>
   );
 }
