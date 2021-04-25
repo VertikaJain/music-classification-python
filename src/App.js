@@ -18,7 +18,8 @@
 // import PropTypes from "./10-prop-types"
 // import ReactRouter from "./11-react-router"
 // import UseMemo from "./12-use-memo"
-import Birthdays from "./projects/1-birthdays"
+// import Birthdays from "./projects/1-birthdays"
+import Tours from "./projects/2-tours"
 
 function App() {
   return (
@@ -42,7 +43,8 @@ function App() {
       {/* <PropTypes/> */}
       {/* <ReactRouter/> */}
       {/* <UseMemo/> */}
-      <Birthdays/>
+      {/* <Birthdays/> */}
+      <Tours/>
     </div>
   );
 }
