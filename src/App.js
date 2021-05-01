@@ -19,7 +19,8 @@
 // import ReactRouter from "./11-react-router"
 // import UseMemo from "./12-use-memo"
 // import Birthdays from "./projects/1-birthdays"
-import Tours from "./projects/2-tours"
+// import Tours from "./projects/2-tours"
+import Reviews from "./projects/3-reviews"
 
 function App() {
   return (
@@ -44,7 +45,8 @@ function App() {
       {/* <ReactRouter/> */}
       {/* <UseMemo/> */}
       {/* <Birthdays/> */}
-      <Tours/>
+      {/* <Tours/> */}
+      <Reviews />
     </div>
   );
 }
