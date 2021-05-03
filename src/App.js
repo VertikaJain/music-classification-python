@@ -21,7 +21,8 @@
 // import Birthdays from "./projects/1-birthdays"
 // import Tours from "./projects/2-tours"
 // import Reviews from "./projects/3-reviews"
-import Accordion from "./projects/4-accordion"
+// import Accordion from "./projects/4-accordion"
+import Menus from "./projects/5-menus"
 
 function App() {
   return (
@@ -48,7 +49,8 @@ function App() {
       {/* <Birthdays/> */}
       {/* <Tours/> */}
       {/* <Reviews /> */}
-      <Accordion/>
+      {/* <Accordion/> */}
+      <Menus/>
     </div>
   );
 }
