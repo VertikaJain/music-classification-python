@@ -20,7 +20,8 @@
 // import UseMemo from "./12-use-memo"
 // import Birthdays from "./projects/1-birthdays"
 // import Tours from "./projects/2-tours"
-import Reviews from "./projects/3-reviews"
+// import Reviews from "./projects/3-reviews"
+import Accordion from "./projects/4-accordion"
 
 function App() {
   return (
@@ -46,7 +47,8 @@ function App() {
       {/* <UseMemo/> */}
       {/* <Birthdays/> */}
       {/* <Tours/> */}
-      <Reviews />
+      {/* <Reviews /> */}
+      <Accordion/>
     </div>
   );
 }
