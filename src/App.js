@@ -22,7 +22,8 @@
 // import Tours from "./projects/2-tours"
 // import Reviews from "./projects/3-reviews"
 // import Accordion from "./projects/4-accordion"
-import Menus from "./projects/5-menus"
+// import Menus from "./projects/5-menus"
+import Tabs from "./projects/6-tabs"
 
 function App() {
   return (
@@ -50,7 +51,8 @@ function App() {
       {/* <Tours/> */}
       {/* <Reviews /> */}
       {/* <Accordion/> */}
-      <Menus/>
+      {/* <Menus/> */}
+      <Tabs/>
     </div>
   );
 }
