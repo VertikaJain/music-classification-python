@@ -24,7 +24,8 @@
 // import Accordion from "./projects/4-accordion"
 // import Menus from "./projects/5-menus"
 // import Tabs from "./projects/6-tabs"
-import Slider from "./projects/7-slider"
+// import Slider from "./projects/7-slider"
+import LoremIpsum from "./projects/8-lorem-ipsum"
 
 function App() {
   return (
@@ -54,7 +55,8 @@ function App() {
       {/* <Accordion/> */}
       {/* <Menus/> */}
       {/* <Tabs/> */}
-      <Slider/>
+      {/* <Slider/> */}
+      <LoremIpsum/>
     </div>
   );
 }
