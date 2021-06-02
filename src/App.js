@@ -25,11 +25,13 @@
 // import Menus from "./projects/5-menus"
 // import Tabs from "./projects/6-tabs"
 // import Slider from "./projects/7-slider"
-import LoremIpsum from "./projects/8-lorem-ipsum"
+// import LoremIpsum from "./projects/8-lorem-ipsum"
+import ColorGenerator from "./projects/9-color-generator"
 
 function App() {
-  return (
-    <div className="container">
+  return <ColorGenerator/>
+  // (
+    // <div className="container">
       {/* <BasicExample /> */}
       {/* <ArrayExample /> */}
       {/* <ObjectExample /> */}
@@ -56,9 +58,10 @@ function App() {
       {/* <Menus/> */}
       {/* <Tabs/> */}
       {/* <Slider/> */}
-      <LoremIpsum/>
-    </div>
-  );
+      {/* <LoremIpsum/> */}
+      
+    // </div>
+  // );
 }
 
 export default App;
