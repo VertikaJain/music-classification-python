@@ -5,12 +5,12 @@ import Values from "values.js"
 const App = () => {
     const [color, setColor] = useState('#4d0099')
     const [error, setError] = useState(false)
-    const [list, setList] = useState([])
+    const [list, setList] = useState(new Values(color).all(7))
 
     const handleSubmit = (e) => {
         e.preventDefault()
         try {
-            let colors = new Values(color).all(10)
+            let colors = new Values(color).all(7)
             setError(false)
             setList(colors)
         } catch (error) {
@@ -35,8 +35,8 @@ const App = () => {
             </form>
         </section>
         <section className='colors'>
-            {list.map((color,index)=>{
-                return <SingleColor key={index} {...color} index={index}/>
+            {list.map((color, index) => {
+                return <SingleColor key={index} {...color} index={index} hexColor={color.hex} />
             })}
         </section>
     </>
